@@ -20,32 +20,13 @@ export class UsersComponent implements OnInit {
     constructor( private service: UserService) {
     }
 
-    _users = [
-        {
-            name: 'luca',
-            lastname: 'xxx',
-            fiscal_code: 'aasj3jasdl2',
-            email: 'luka@tin.it',
-            address: 'rome'
-        },
-        {
-            name: 'davide',
-            lastname: 'xxx',
-            fiscal_code: 'aasj3jasdl2',
-            email: 'davide@tin.it',
-            address: 'milano'
-        },
-        {
-            name: 'luca',
-            lastname: 'xxx',
-            fiscal_code: 'aasj3jasdl2',
-            email: 'luka@tin.it',
-            address: 'torino'
-        },
-    ];
-
     ngOnInit()  {
         this.users = this.service.getUsers();
+    }
+
+    onDeleteUser(user) {
+       // console.log(user );
+       this.service.deleteUser(user);
     }
 
 

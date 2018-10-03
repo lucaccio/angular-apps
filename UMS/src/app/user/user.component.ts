@@ -14,23 +14,21 @@ export class UserComponent implements OnInit {
 
 
   //sez 3 lez 21
-  @Output('onDeleUser') userDeleted = new EventEmitter()
+  // sto dicendo che la propriuetà userDleted con alias onDeleteUser è un oggetto eventEmitter che uscirà dalla classe
+  // questo funziona tra classe figlio e classe padre
+
+  @Output('onDeleteUser') userDeleted = new EventEmitter();
 
   constructor(private userService: UserService) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   deleteUser( ) {
-    console.log(this);
+    
      //this.userService.deleteUser(this.user); chiamo il servizio per delete
 
+    //il parametro verrà mappato in $event del relativo file html
      this.userDeleted.emit(this.user);
-
-
-
   }
-  
-
 
 }

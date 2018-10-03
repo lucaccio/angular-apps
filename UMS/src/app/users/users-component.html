@@ -11,7 +11,9 @@
     <th>action</th>
 </tr>
 <!--// {{users | json}} -->
- <tr app-user *ngFor="let user_simple of users" [user-singolo] = "user_simple"  > <!-- diachiaro la variabile user con let -->
+ <tr app-user *ngFor="let user_simple of users" [user-singolo] = "user_simple" 
+    (onDeleteUser) = "onDeleteUser($event)"
+ > <!-- diachiaro la variabile user con let -->
     
  </tr>
 </table>

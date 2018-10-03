@@ -7,21 +7,21 @@ export class UserService {
     users = [
         {
             name: 'luca',
-            lastname: 'xxx',
+            lastname: 'pi',
             fiscal_code: 'aasj3jasdl2',
             email: 'luka@tin.it',
             address: 'rome'
         },
         {
             name: 'davide',
-            lastname: 'xxx',
+            lastname: 'der',
             fiscal_code: 'aasj3jasdl2',
             email: 'davide@tin.it',
             address: 'milano'
         },
         {
-            name: 'luca',
-            lastname: 'xxx',
+            name: 'mario',
+            lastname: 'san',
             fiscal_code: 'aasj3jasdl2',
             email: 'luka@tin.it',
             address: 'torino'
