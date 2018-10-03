@@ -1,0 +1,17 @@
+td{
+    background-color: silver;
+    color: red;
+    padding: 5px;
+}
+
+th, td {
+    border: 1px solid;
+}
+
+button.delete {
+    background-color: white;
+    color:red;
+    padding: 5px;
+    border: 1px solid black;
+    width: 80px;
+}

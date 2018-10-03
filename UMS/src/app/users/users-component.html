@@ -1,0 +1,17 @@
+<h2>users sys</h2>
+
+<table>
+    <caption>{{title}}</caption>
+<tr>
+    <th>Nome</th>
+    <th>Cognome</th>
+    <th>Cod Fiscale</th>
+    <th>email</th>
+    <th>adress</th>
+    <th>action</th>
+</tr>
+<!--// {{users | json}} -->
+ <tr app-user *ngFor="let user_simple of users" [user-singolo] = "user_simple"  > <!-- diachiaro la variabile user con let -->
+    
+ </tr>
+</table>
